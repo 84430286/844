@@ -1,0 +1,77 @@
+.supply-box {
+    width: 384px;
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+.supply-hd {
+    height: 102px;
+    overflow: hidden;
+}
+.supply-img {
+    width: 110px;
+    float: left;
+    text-align: right;
+}
+.img-wifi {
+    background: #abcbf5;
+}
+
+.img-wifi{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.supply-cont {
+    margin-left: 130px;
+    padding-top: 15px;
+    line-height: 1.5;
+}
+.supply-title {
+    font: 16px/1.5 "Microsoft yahei";
+    margin-bottom: 5px;
+}
+.supply-intro {
+    padding-right: 5px;
+    color: #666;
+}
+.supply-bd {
+    
+    overflow: hidden;
+    border-top: 1px solid #e0e0e0;
+}
+.supply-list {
+    margin-left: -1px;
+    overflow: hidden;
+}
+.supply-list li {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 0;
+}
+.supply-item {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    border-left: 1px dashed #a3a3a3;
+    text-align: center;
+    margin-left: -1px;
+    color: #333;
+}
+.supply-item .icon {
+    overflow: hidden;
+    margin-right: 5px;
+}
+.supply-item .icon img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
