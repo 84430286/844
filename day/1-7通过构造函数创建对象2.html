@@ -1,0 +1,144 @@
+<script>
+  // function Person(name, age) {
+  //   this.name = name;                // 添加name属性
+  //   this.age = age;                  // 添加age属性
+  //   this.sayHello = function () {    // 添加sayHello()方法
+  //     console.log('你好，我是' + this.name);
+  //   };
+  // }
+  // var p1 = new Person('张三', 18);
+  // var p2 = new Person('李四', 19);
+  // console.log(p1);                  // 输出结果：Person {name: "张三", age: 18}
+  // console.log(p2);                  // 输出结果：Person {name: "李四", age: 19}
+  // p1.sayHello();                    // 输出结果：你好，我是 张三
+  // console.log(p1.constructor);      // 输出结果：function Person(name, age) ……
+                           
+
+
+  // // 定义类---ES6新增
+  // class Student {
+  //   //仅属性使用构造函数
+  //    constructor (name, age, gender) {    // 构造方法
+  //     this.name = name;                  // 添加name属性
+  //     this.age = age;                    // 添加age属性
+  //     this.gender = gender;              // 添加gender属性
+  //   }
+  //   //函数独立列出，不用function关键字
+  //   introduce() {                        // 定义introduce()方法
+  //     console.log('我是' + this.n0ame + '，今年' + this.age + '岁。');
+  //   }
+  // }
+  // // 实例化时会自动调用constructor()构造方法
+  // var st = new Student('王五', 19, '男');
+  // st.introduce();    // 输出结果：我是王五，今年19岁。
+//商品类
+ class Product{
+   constructor(id,title,price,imgpath){
+     this.id=id;
+     this.title=title;
+     this.price=price;
+     this.imgpath=imgpath;
+   }
+ 
+ }
+ var pr=new Product('123','书',50,'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=905749043,1080517866&fm=200&gp=0.jpg');
+var pr2=new Product('01','牙刷',10,'images/01.jpg')
+console.log(pr);
+
+
+// class Order{
+//   constructor(product,qty){
+//     this.product=product;
+//     this.qty=qty;
+//   }
+
+// }
+
+
+//订单类
+class Order{
+  constructor(product,qty){
+    this.id=product.id;
+     this.title=product.title;
+     this.price=product.price;
+     this.imgpath=product.imgpath;
+    this.qty=qty;
+  }
+
+}
+var or=new Order(pr,2);
+console.log(or);
+
+// console.log(pr.title);
+// console.log(pr2.title,pr2.price);
+// console.log(or.product.title);
+
+// var or2= new Order(pr2,5);
+// console.log(or2);
+// console.log(or2);
+// console.log(or2.product.title);
+
+
+// var prod=new Array();
+// prod.push(pr);
+
+// console.log(prod);
+
+// var orde=new Array();
+// orde.push(or);
+// console.log(orde);
+ //购物车数据类
+class Cartdata{
+  constructor(){
+    this.orderList=new Array();
+    this.units=0;
+    this.totalQty=0;
+    this.totalAmount=0;
+  }
+}
+function addtoCart(or){
+  var flag=true;//标记商品状态为新商品
+  for (const i in ca.orderList) {
+    if(or.id==ca.orderList[i].id){
+      flag=false;
+      ca.orderList[i].qty+=or.qty;
+      break;
+    }
+    
+  }
+  if(flag){
+    ca.orderList.push(or);
+    ca.units++;
+  }
+  ca.totalQty+=or.qty;
+  ca.totalAmount+=or.price*or.qty;
+}
+var ca=new Cartdata();
+//订单1
+ca.orderList.push(or);
+ca.units=1;
+ca.totalQty=or.qty;
+ca.totalAmount=or.price*or.qty;
+
+//多条订单
+or=new Order(pr2,1);
+addtoCart(or)
+or=new Order(pr2,3);
+addtoCart(or)
+console.log(ca);
+
+
+
+
+var x=10;
+var y=5;
+localStorage.setItem('kx',x);
+var xfroms=localStorage.getItem('kx');
+console.log(xfroms*y);
+console.log(parseInt( xfroms)+y);
+
+localStorage.setItem('p1',JSON.stringify(pr));
+var pfromS =JSON.
+
+
+</script>
