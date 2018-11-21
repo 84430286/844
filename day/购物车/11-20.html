@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="shopkar.js"></script>
+    <script>
+        var p = new Product('01', '牙刷', 10, 'images/01.jpg');
+        var order=new Order(p,2,true)
+        var cartData = new CartData()
+       
+        cartData.orderList.push(order);
+        cartData.units = 1;
+        cartData.totalQty = order.qty;
+        cartData.totalAmount = order.price * order.qty;
+        var cart=new ShoppingCart();
+        cart.setDataTolocalSatorge(cartData);
+        console.log(cart.getDateFromLocalSatorge());
+
+
+
+
+        
+
+    </script>
+</body>
+
+</html>
