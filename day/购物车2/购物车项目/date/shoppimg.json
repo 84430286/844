@@ -1,0 +1,26 @@
+[
+    {
+        "id": "01",
+        "price": 99.00,
+        "imgSrc": "images/01.jpg",
+        "title": "30片巨补水 秋冬新款面膜"
+    },
+    {
+        "id": "02",
+        "price": 99.00,
+        "imgSrc": "images/02.jpg",
+        "title": "新西兰进口白金版婴幼儿奶粉"
+    },
+    {
+        "id": "03",
+        "price": 99.00,
+        "imgSrc": "images/03.jpg",
+        "title": "卡耐基经典 人性的弱点"
+    },
+    {
+        "id": "04",
+        "price": 99.00,
+        "imgSrc": "images/04.jpg",
+        "title": "海淘耳机"
+    }
+]
