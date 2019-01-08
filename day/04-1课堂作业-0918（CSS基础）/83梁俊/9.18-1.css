@@ -1,0 +1,20 @@
+h1{
+    color: aqua; text-align:right;font-size: 500%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;background-color:darkgoldenrod;
+    
+
+    
+}
+.wd{
+    color: blanchedalmond;
+    font-weight: bold;
+    
+    
+}
+#wu{
+    color: brown;
+}
+body{
+    background-color: brown;
+}
